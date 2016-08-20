@@ -1,6 +1,31 @@
 @extends('layouts.root')
 
 @section('content')
+<div class="col-sm-9">
+    <div class="well">
+        <h3>nội dung của trang </h3>
+    </div>
+    <div class="breadcrumb">
+
+        <ul class="list-inline">
+            <li>
+                <a href="#">Page 1</a>
+                <span>/</span>
+            </li>
+            <li>
+                <a href="#" class="action">Page 2 </a>
+                <span>/</span>
+            </li>
+
+            <li class="action">
+                <a href="#" Page> Page 3 </a>
+                <span>/</span>
+            </li>
+            <li>abc</li>
+        </ul>
+
+    </div>
+    
     <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -481,14 +506,16 @@
             </tr>
         </tbody>
     </table>
+
+</div>
 @endsection
 
 @section("scripts")
 
 <script>
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
 </script>
 
 @endsection
